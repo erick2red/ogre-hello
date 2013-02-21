@@ -2,6 +2,10 @@
 
 int main(int argc, char *argv[])
 {
-  int a;
+  Ogre::Root *root = new Ogre::Root ();
+
+  root->showConfigDialog ();
+
+  delete root;
   return 0;
 }
